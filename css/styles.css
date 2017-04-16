@@ -1,0 +1,27 @@
+.navbar-default {
+  border: none;
+}
+
+#two {
+    display: none;
+}
+
+#three {
+    display: none;
+}
+
+.slide {
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+}
+
+blockquote {
+    border: none;
+    border-radius: 10px;
+    font-style: italic;
+}
+
+.bg-warning {
+	background-color: #dbdbdb;
+}

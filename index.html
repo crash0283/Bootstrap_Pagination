@@ -7,27 +7,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <script src="https://use.fontawesome.com/a537da5116.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:200" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <title>Bootstrap</title>
 </head>
 
 <body>
-    <div class="content container">
+    <div class="content container-fluid">
+        <ol class="breadcrumb">
+            <li><a href="#">home</a></li>
+            <li><a href="#">services</a></li>
+            <li><a href="#">grooming</a></li>
+        </ol>
         <div class="row">
-            <section class="col-xs-12">
-                <ol class="breadcrumb">
-                    <li><a href="#">home</a></li>
-                    <li><a href="#">services</a></li>
-                    <li><a href="#">grooming</a></li>
-                </ol>
-                <h2>Grooming</h2>
-                <p>Our therapeutic grooming treatments help battle fleas, allergic dermatitis, and other challenging skin conditions.</p>
-                <ul>
-                    <li><a href="#">Older</a></li>
-                    <li><a href="#">Newer</a></li>
+            <section class="col-md-8">
+                <ul class="pager">
+                    <li class="previous"><a href="#"><span>&larr;</span>Older</a></li>
+                    <li class="next"><a href="#">Newer<span>&rarr;</span></a></li>
                 </ul>
+                <div class="leftText bg-warning">
+                    <h2>Grooming</h2>
+                    <p>Our therapeutic grooming treatments help battle fleas, allergic dermatitis, and other challenging skin conditions.</p>
+                </div>
+            </section>
+            <section class="col-md-4">
                 <nav>
-                    <ol class="pagination pagination-sm">
+                    <ol class="pagination">
                         <li><a id="previous" href="#" aria-label="Previous">&laquo;</a></li>
                         <li class="active"><a href="#one" id="pressBlue">1</a></li>
                         <li><a id="pressPink" href="#two">2</a></li>
@@ -35,22 +40,19 @@
                         <li><a id="next" href="#" aria-label="Next">&raquo;</a></li>
                     </ol>
                 </nav>
-                <div class="wrapper">
-                    <div class="slide one bg-warning" id="one">
-                        <h4 class="city"></h4>
-                        <i class="fa fa-cloud fa-4x" aria-hidden="true"></i>
-                        <h2 class="temp"></h2>
-                    </div>
-                    <div class="slide two bg-warning" id="two">
-                        <blockquote>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus placerat suscipit vehicula. Vivamus lectus arcu, pharetra in est vel, congue porttitor magna. Nam ipsum nisi, congue nec tristique a, semper a nibh.
-                            <footer><i>Bob</i></footer>
-                        </blockquote>
-                    </div>
-                    <div class="slide three bg-warning" id="three">
-                        <blockquote>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            <footer><i>Jimmy</i></footer>
-                        </blockquote>
-                    </div>
+                <div class="slide one bg-info" id="one">
+                    <h4 class="city"></h4> <i class="fa fa-cloud fa-2x" aria-hidden="true"></i>
+                    <p class="lead"></p>
+                    <h2 class="temp"></h2> </div>
+                <div class="slide two bg-info" id="two">
+                    <blockquote>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus placerat suscipit vehicula. Vivamus lectus arcu, pharetra in est vel, congue porttitor magna. Nam ipsum nisi, congue nec tristique a, semper a nibh.
+                        <footer>Bob</footer>
+                    </blockquote>
+                </div>
+                <div class="slide three bg-info" id="three">
+                    <blockquote>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        <footer>Jimmy</footer>
+                    </blockquote>
                 </div>
         </div>
         </section>

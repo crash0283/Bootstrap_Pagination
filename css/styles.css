@@ -1,3 +1,9 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+
+}
+
 .navbar-default {
   border: none;
 }
@@ -10,18 +16,44 @@
     display: none;
 }
 
+nav {
+	text-align: right;
+}
+
+.leftText {
+	border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
 .slide {
     border-radius: 10px;
     text-align: center;
     padding: 10px;
+    width: 100%;
+}
+
+.city {
+    font-size: 24pt;
 }
 
 blockquote {
     border: none;
-    border-radius: 10px;
     font-style: italic;
 }
 
-.bg-warning {
-	background-color: #dbdbdb;
+.fa-snowflake-o {
+    color: white;
+}
+
+.fa-sun-o {
+    color: yellow;
+}
+
+.fa-cloud {
+    color: slategray;
+}
+
+.fa-tint {
+    color: dodgerblue;
 }
